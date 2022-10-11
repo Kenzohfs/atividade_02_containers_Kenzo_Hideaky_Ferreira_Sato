@@ -4,6 +4,10 @@ const listaProdutos = [];
 async function cadastrar_produto(data) {
     let loginValido = false;
 
+    //docker network ls
+    // docker network create --driver bridge nome
+    //docker run -d -p 8080:3000 --name destino --network nome
+
     const res = await fetch('http://destino:3000/api/login', {
         method: 'post',
         body: JSON.stringify(data),
