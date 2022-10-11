@@ -8,8 +8,4 @@ router.post("/", (req, res) => {
     res.json(login_handler.login(req.body, cadastrar_usuario_handler.retonarListaUsuarios()));
 });
 
-router.get("/", (req, res) => {
-    res.json(cadastrar_usuario_handler.retonarListaUsuarios());
-});
-
 module.exports = router;
